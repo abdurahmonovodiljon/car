@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&family=Roboto:wght@400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+  max-width: 1400px;
+  margin: auto;
+}
+
+a, a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  display: inline-block;
+}
+
+.header{
+  width: 100%;
+  background-color: #26284e;
+}
+
+.header .nav-bar{
+  width: 90%;
+  height: 80px;
+  margin: auto;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.header .nav-bar .logo{
+  margin-left: 50px;
+}
+
+.header .nav-bar .logo a{
+  font-size: 23px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header .nav-bar .menu ul li{
+   margin-right: 30px;
+}
+
+.header .nav-bar .menu ul li a{
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 10px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  transition: all 0.5s;
+  overflow: 0.6;
+  color: #fff;
+}
+
+.header .nav-bar .menu ul li a .active{
+  opacity: 1;
+}
+
+.header .nav-bar .menu ul li a:hover{
+  opacity: 1;
+  color: coral;
+} 
+
+.header .nav-bar .social-media ul li i{
+  width: 45px;
+  height: 45px;
+  padding: 9px;
+  line-height: 45px;
+  margin-right: 5px;
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  font-size: 19px;
+  background-color: #cac5c542;
+  transition: all 0.3s ease-in-out;
+}
+
+.header .nav-bar .social-media ul li i:hover{
+  background-color: rgb(255 0 0 /0.9);
+}
+
+.hero{
+  width: 100%;
+}
+
+.hero .row{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  margin: auto;
+}
+
+.hero .row .left-sec{
+  width: 30%;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.hero .row .left-sec h2{
+  font-size: 85px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.hero .row .left-sec  span{
+  color: #d43242;
+}
+
+.hero .row .left-sec p{
+  margin: 20px 0;
+  color: #fff;
+  line-height: 28px;
+  padding-right: 18px;
+}
+
+.hero .row .left-sec .discover-btn{
+  display: flex;
+  align-items: center;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 49px;
+  padding: 3px 25px;
+  border: 3px solid #ffa938;
+  background-color: #d43242;
+  box-shadow: 5px 7px 20px #000;
+}
+
+.hero .row .left-sec .discover-btn a{
+   color: #fff;
+   font-size: 25px;
+   letter-spacing: 2px;
+   margin-right: 15px;
+   text-transform: capitalize;
+}
+
+
+.hero .row .left-sec .discover-btn span{
+  color: #fff;
+  font-size: 45px;
+}
+
+.hero .information{
+  /* width: 100px; */
+  display: flex;
+  margin-top: 100px;
+}
+
+.hero .information .production{
+  margin-right: 50px;
+  line-height: 3px;
+}
+
+.page{
+  font-size: 12px;
+}
+
+.logo{
+  color: #fff;
+}
+
+
+.hero .information .production h2{
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.george{
+  color: #fff;
+}
+
+.hero .information .production p{
+  padding-right: 0;
+  letter-spacing: 1px;
+}
+
+.logopng{
+  width: 600px;
+}
+
+.hero .right-sec{
+  width: 70%;
+  padding-top: 100px;
+}
+
+.hero .right-sec img{
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  float: right;
+}
+
+.right-sec{
+  margin-left: -12px;
+}
+
+.slick-next, .slick-prev{
+  top: 110%;
+  z-index: 999;
+}
+
+.slick-prev{
+  position: absolute;
+  left: 950px;
+}
+
+
+.slick-next{
+  position: absolute;
+  right: 178px;
+}
+
+.like img {
+  width: 90px;
+  animation: bubble 7s linear infinite;
+}
+
+.like {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -70px;
+}
+
+
+ @keyframes bubble {
+  
+0% {
+  transform: translateY(0);
+  opacity: 0;
+}
+
+50% {
+  opacity: 1;
+}
+
+70% {
+  opacity: 1;
+}
+
+100% {
+  transform: translateY(-80vh);
+  opacity: 0;
+}
+}
+
+.like img:nth-child(1) {
+animation-delay: 2s;
+width: 25px;
+}
+
+.like img:nth-child(2) {
+animation-delay: 1s;
+}
+
+.like img:nth-child(3) {
+animation-delay: 3s;
+width: 25px;
+}
+
+.like img:nth-child(4) {
+animation-delay: 4.5s;
+
+} 
+
+ .like img:nth-child(5) {
+ animation-delay: 3s;
+}
+
+.like img:nth-child(6) {
+ animation-delay: 6s;
+ width: 20px;
+}
+
+.like img:nth-child(7) {
+ animation-delay: 7s;
+ width: 35px;
+} 
+
+.logo-my{
+  width: 200px;
+  margin: 60px 10px;
+}
+
+.cars-png{
+  display: flex;
+  justify-content: center;
+}
